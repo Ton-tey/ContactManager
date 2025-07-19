@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36301.6 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactsManagerWPF", "Contacts Manager\ContactsManagerWPF.csproj", "{F1C97406-B318-4D55-9375-B7CDA7BC15FC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F1C97406-B318-4D55-9375-B7CDA7BC15FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1C97406-B318-4D55-9375-B7CDA7BC15FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1C97406-B318-4D55-9375-B7CDA7BC15FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1C97406-B318-4D55-9375-B7CDA7BC15FC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A6462C44-2345-42CF-A0E6-C2663D016926}
+	EndGlobalSection
+EndGlobal
