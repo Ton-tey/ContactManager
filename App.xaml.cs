@@ -6,7 +6,7 @@ namespace Contacts_Manager
 {
     public static class AppConfig
     {
-        public static string ConnectionString => //String to connect to the database
+        public static string ConnectionString => "Server=THINKPAD-T495;Database=contactDetails;Trusted_Connection=True;";
     }
 
     public partial class App : Application

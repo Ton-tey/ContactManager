@@ -14,7 +14,7 @@ namespace Contacts_Manager
 {
     public partial class MainWindow : Window
     {
-        private string connectionString => //String to connect to the database
+        private string connectionString => "Server=THINKPAD-T495;Database=contactDetails;Trusted_Connection=True;";
         private List<Contact> contacts = new List<Contact>();
         private List<Contact> allContacts = new List<Contact>();
 
@@ -47,6 +47,8 @@ namespace Contacts_Manager
                             Address = reader["Address"].ToString(),
                             DateAdded = (DateTime)reader["DateAdded"],
                             IsFavorite = reader["IsFavorite"] != DBNull.Value && (bool)reader["IsFavorite"]
+                            
+
                         });
                         allContacts.Add(new Contact
                         {
@@ -57,6 +59,8 @@ namespace Contacts_Manager
                             Address = reader["Address"].ToString(),
                             DateAdded = (DateTime)reader["DateAdded"],
                             IsFavorite = reader["IsFavorite"] != DBNull.Value && (bool)reader["IsFavorite"]
+                            
+
                         });
                     }
                     reader.Close();
@@ -187,6 +191,8 @@ namespace Contacts_Manager
             public string Address { get; set; }
             public DateTime DateAdded { get; set; }
             public bool IsFavorite { get; set; }
+            public string GroupKey => string.IsNullOrEmpty(Name) ? "#" : Name.Substring(0, 1).ToUpper();
+
         }
     }
 }
